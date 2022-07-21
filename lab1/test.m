@@ -13,7 +13,7 @@ Carrier = Ac*sin(2*pi*t);      % Carrier wave
 
 bitStream = [];
 carrierSignal = [];
-
+helo = [];
 i = 1;
 while(i<=Points)
     if(rBinary(i))
@@ -25,6 +25,9 @@ while(i<=Points)
     i = i+1;
 end
 
+hello = carrierSignal.*bitStream; 
+
+fuck 
 bits = 2*(bitStream-0.5);         % transfering bits
 bpskSignal = carrierSignal.*bits; % Generating into BPSK by mutliplying carrierSignal with bis
 plot(bits);

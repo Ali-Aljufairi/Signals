@@ -12,6 +12,10 @@ E=sum(A)  ;
 %% Calculate the DCT matrix A. 
 T=dct(A);
 
+hello  = T(1,:);
+for  i = 2:size(T,1)
+    hello = [hello T(i,:)];
+end
 
 %% Third Question part 1 
 x=0:01:30;
