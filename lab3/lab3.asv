@@ -21,7 +21,7 @@ title ('Periodogram', 'color', '#0d6efd','FontSize',14,'FontName' ...
 y0 = fftshift(y); % Rearrange y values 
 f0 = (-n/2:n/2-1)*(fs/n); % 0-centered frequency range
 power0 = y0.*conj(y0)/n; % 0-centered power 
-plot(f0,power0, 'color', '#F5A9F7', 'LineWidth', 2);
+plot(f0,power0);
 xlabel('Frequency (Hz)', 'color', '#D21D55');
 ylabel('Power', 'color', '#D21D55') ;
 title('{\bf 0-Centered Periodogram}', 'color', ...
