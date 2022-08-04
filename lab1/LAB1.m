@@ -22,5 +22,5 @@ x=0:01:30;
 y=sin(x)+x-x.cos(x);
 plot(y)
 title('Signal')
-xlabel('x=Time');
-ylabel('y=sin(x)+x-xcos(x)')
+xlabel('x=Time', 'color', '#D21D55');
+ylabel('y=sin(x)+x-xcos(x)', 'color', '#D21D55')
