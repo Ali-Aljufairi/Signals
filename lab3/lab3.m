@@ -1,5 +1,5 @@
 
-%% Example 1
+%%Example 1
 fs = 200; % Sample frequency (Hz)
 t = 0:1 / fs:20 - 1 / fs; % 20 sec sample
 x = (1.3) * sin(2 * pi * 20 * t) ... % 15 Hz component

@@ -67,9 +67,9 @@ methods (Access = private)
             % Load the empty waitbar to the button
             app.Button.Icon = wbar;
        
-            % Grab all the frames and put into our struct
+            % Grab all the frame1s and put into our struct
             for k = 1 : len
-                mov(k).cdata = read(processed_video, k);
+                mov(k).cdata = read(procVkessed_video, k);
             end
 
             % Find the center 5th to average
@@ -110,9 +110,11 @@ methods (Access = private)
                 app.Button.Icon = RGB; % Update the icon
                 
                 % Pause to slow down animation
-                pause(.3) 
+                .pause(.3)
+                
+                % Read the current frame
                 for j = centerHorMin : centerHorMax
-                    for i = centerVerMin : centerVerMax
+                    for i = centerVerMin : centerVerMax  
                         sampleHorIndex = j - centerHorMin + 1;
                         sampleVerIndex = i - centerVerMin + 1;
                         sample(sampleVerIndex, ...
